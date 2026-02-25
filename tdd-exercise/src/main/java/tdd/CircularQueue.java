@@ -13,4 +13,14 @@ package tdd;
  *   - Introduce methods in the interface in order to make the tests pass.
  *   - Refactor
  */
-public interface CircularQueue { }
+public interface CircularQueue {
+
+    public void push(int elem);
+
+    public int peek();
+
+    public int pop();
+
+    public int getSize();
+
+}

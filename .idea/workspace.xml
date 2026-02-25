@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a3f7f2a-b4c8-45cb-b99d-482f5cc48313" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic-refactoring-exercise/src/main/java/example/model/SimpleBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-refactoring-exercise/src/main/java/example/model/SimpleBankAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic-refactoring-exercise/src/test/java/SimpleBankAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-refactoring-exercise/src/test/java/SimpleBankAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdd-exercise/src/main/java/tdd/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdd-exercise/src/main/java/tdd/CircularQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdd-exercise/src/main/java/tdd/SmartDoorLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdd-exercise/src/main/java/tdd/SmartDoorLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdd-exercise/src/test/java/tdd/CircularListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdd-exercise/src/test/java/tdd/CircularListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdd-exercise/src/test/java/tdd/MinMaxStackImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdd-exercise/src/test/java/tdd/MinMaxStackImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdd-exercise/src/test/java/tdd/SmartDoorLockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdd-exercise/src/test/java/tdd/SmartDoorLockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +26,30 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\annam\.gradle\wrapper\dists\gradle-8.4-bin\1w5dpkrfk8irigvoxmyhowfim\gradle-8.4" javaHome="C:\Program Files\Eclipse Adoptium\jdk-17.0.8.101-hotspot" gradleVersion="8.4" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="3A3vq9p8TZDSVDd3AAKJQViCqJg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,11 +57,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.CircularListTest.executor": "Run",
+    "Gradle.CircularListTest.testInsertionElements.executor": "Run",
+    "Gradle.CircularListTest.testPopLogic.executor": "Run",
+    "Gradle.CircularListTest.testQueueDoesNotExceedMaxCapacity.executor": "Run",
+    "Gradle.MinMaxStackImplTest.executor": "Run",
+    "Gradle.MinMaxStackImplTest.testInsertionInStack.executor": "Run",
+    "Gradle.MinMaxStackImplTest.testMaxMinValues.executor": "Run",
+    "Gradle.SimpleBankAccountTest.accountWithFee.executor": "Run",
     "Gradle.SimpleBankAccountTest.executor": "Run",
+    "Gradle.SmartDoorLockTest.testBlockingAndResetingDoor.executor": "Run",
+    "Gradle.SmartDoorLockTest.testChangePin.executor": "Run",
+    "Gradle.SmartDoorLockTest.testDoorInitiallyOpen.executor": "Run",
+    "Gradle.SmartDoorLockTest.testLockingDoor.executor": "Run",
+    "Gradle.SmartDoorLockTest.testUnlockingDoor.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/annam/Desktop/lab/pps-lab01",
@@ -45,8 +84,8 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="SimpleBankAccountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CircularListTest.testPopLogic">
+    <configuration name="CircularListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -57,9 +96,105 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":basic-refactoring-exercise:test" />
+            <option value=":tdd-exercise:test" />
             <option value="--tests" />
-            <option value="&quot;SimpleBankAccountTest&quot;" />
+            <option value="&quot;tdd.CircularListTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CircularListTest.testInsertionElements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":tdd-exercise:test" />
+            <option value="--tests" />
+            <option value="&quot;tdd.CircularListTest.testInsertionElements&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CircularListTest.testPopLogic" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":tdd-exercise:test" />
+            <option value="--tests" />
+            <option value="&quot;tdd.CircularListTest.testPopLogic&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CircularListTest.testQueueDoesNotExceedMaxCapacity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":tdd-exercise:test" />
+            <option value="--tests" />
+            <option value="&quot;tdd.CircularListTest.testQueueDoesNotExceedMaxCapacity&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MinMaxStackImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":tdd-exercise:test" />
+            <option value="--tests" />
+            <option value="&quot;tdd.MinMaxStackImplTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -72,7 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SimpleBankAccountTest" />
+        <item itemvalue="Gradle.CircularListTest.testPopLogic" />
+        <item itemvalue="Gradle.CircularListTest" />
+        <item itemvalue="Gradle.CircularListTest.testQueueDoesNotExceedMaxCapacity" />
+        <item itemvalue="Gradle.CircularListTest.testInsertionElements" />
+        <item itemvalue="Gradle.MinMaxStackImplTest" />
       </list>
     </recent_temporary>
   </component>

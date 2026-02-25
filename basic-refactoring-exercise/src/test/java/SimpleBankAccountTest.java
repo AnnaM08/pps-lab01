@@ -2,6 +2,7 @@ import example.model.AccountHolder;
 import example.model.BankAccount;
 import example.model.SimpleBankAccount;
 
+import example.model.SimpleBankAccountWithFee;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,10 +44,10 @@ class SimpleBankAccountTest {
     }
 
     @Test
-    void testWithdrawWithFee() {
+    void testWithdraw() {
         bankAccount.deposit(accountHolder.id(), DEPOSITED_VALUE);
         bankAccount.withdraw(accountHolder.id(), WITHDRAW_VALUE);
-        assertEquals(DEPOSITED_VALUE - WITHDRAW_VALUE - SimpleBankAccount.FEE, bankAccount.getBalance());
+        assertEquals(DEPOSITED_VALUE - WITHDRAW_VALUE, bankAccount.getBalance());
     }
 
     @Test
@@ -55,4 +56,17 @@ class SimpleBankAccountTest {
         bankAccount.withdraw(NOT_DEFINED_ID, WITHDRAW_VALUE);
         assertEquals(DEPOSITED_VALUE, bankAccount.getBalance());
     }
+
+    @Test
+    void accountWithFee(){
+        final var holder = new AccountHolder("Gino", "Pino", 2);
+        final var bankWithFee = new SimpleBankAccountWithFee(holder, DEPOSITED_VALUE);
+        bankWithFee.withdraw(holder.id(),DEPOSITED_VALUE);
+        assertNotEquals(bankWithFee.getBalance(), STARTING_BALANCE);
+        bankWithFee.withdraw(holder.id(), DEPOSITED_VALUE - SimpleBankAccountWithFee.FEE);
+        assertEquals(bankWithFee.getBalance(), STARTING_BALANCE);
+
+    }
+
+
 }
